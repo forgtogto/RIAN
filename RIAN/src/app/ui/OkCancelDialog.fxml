@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.OkCancelDialogController">
+   <children>
+      <Button layoutX="231.0" layoutY="113.0" mnemonicParsing="false" onAction="#onOK" prefWidth="70.0" text="확 인" />
+      <Button layoutX="316.0" layoutY="113.0" mnemonicParsing="false" onAction="#onCancel" prefWidth="70.0" text="취 소" />
+      <Label fx:id="msg_area" layoutX="24.0" layoutY="59.0" prefHeight="33.0" prefWidth="353.0" text="여기에 텍스트가 적힐것이다 ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

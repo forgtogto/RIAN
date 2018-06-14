@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="278.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controllers.LoginController">
+   <children>
+      <ImageView fitHeight="300.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../resources/LoginMain.png" />
+         </image>
+      </ImageView>
+      <AnchorPane prefHeight="286.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="102.0" layoutY="146.0" text="아이디" textFill="#dbddda">
+               <font>
+                  <Font name="NanumBarunGothic" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="88.0" layoutY="173.0" text="비밀번호" textFill="#dbddda">
+               <font>
+                  <Font name="NanumBarunGothic" size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="pwField" layoutX="149.0" layoutY="171.0" />
+            <TextField fx:id="idField" layoutX="149.0" layoutY="143.0" />
+            <Button layoutX="292.0" layoutY="143.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="50.0" prefWidth="63.0" text="로그인" />
+            <Button layoutX="149.0" layoutY="208.0" mnemonicParsing="false" onAction="#onMemberJoin" prefHeight="23.0" prefWidth="92.0" text="아이디 신청" />
+            <Button layoutX="245.0" layoutY="208.0" mnemonicParsing="false" onAction="#onFindPassword" prefHeight="23.0" prefWidth="110.0" text="비밀번호 찾기" />
+            <Hyperlink layoutX="143.0" layoutY="255.0" text="Copyright by RIAN" textFill="#a5d4e8" />
+            <Label layoutX="127.0" layoutY="57.0" text="LOGIN" textFill="#f86a6a">
+               <font>
+                  <Font size="48.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
